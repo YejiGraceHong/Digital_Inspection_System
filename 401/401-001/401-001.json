@@ -1,0 +1,97 @@
+{
+	"id": "401-001",
+	"subSection": "401.02",
+	"checkQuestion": {
+		"contents":[
+			{
+				"sentence":"Is the QCP detailed and addresses contract-specific construction activities (not CUT and PASTE)?"
+			}
+		]
+	},
+	"rationale": {
+		"contents":[
+			{
+				"sentence":"To verify the QCP complies with "
+			},
+			{
+				"relevantMaterial":{
+					"text":"ITM 803",
+					"location":"../../relevantMaterial/ITM 803.pdf"
+				}
+			},
+			{
+				"sentence":" checklist and meets project specific needs such as location, access, haul roads, etc."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a.	Review QCP and ensure that the plan addresses all appropriate ITM 803 checklist items.<br>"
+			},
+			{
+				"image":{
+					"location":"ITM 803 pic1.png",
+					"caption":"ITM 803 checklist items - page 1",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 803: Contractor Quality Control Plans",
+						"year":"2023",
+						"url":"../../relevantMaterial/ITM 803.pdf"
+					}
+				}
+			},
+			{
+				"image":{
+					"location":"ITM 803 pic2.png",
+					"caption":"ITM 803 checklist items - page 2",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 803: Contractor Quality Control Plans",
+						"year":"2023",
+						"url":"../../relevantMaterial/ITM 803.pdf"
+					}
+				}
+			},
+			{
+				"image":{
+					"location":"ITM 803 pic3.png",
+					"caption":"ITM 803 checklist items - page 3",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 803: Contractor Quality Control Plans",
+						"year":"2023",
+						"url":"../../relevantMaterial/ITM 803.pdf"
+					}
+				}
+			},
+			{
+				"image":{
+					"location":"ITM 803 pic4.png",
+					"caption":"ITM 803 checklist items - page 4",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 803: Contractor Quality Control Plans",
+						"year":"2023",
+						"url":"../../relevantMaterial/ITM 803.pdf"
+					}
+				}
+			},
+			{
+				"image":{
+					"location":"ITM 803 pic5.png",
+					"caption":"ITM 803 checklist items - page 5",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 803: Contractor Quality Control Plans",
+						"year":"2023",
+						"url":"../../relevantMaterial/ITM 803.pdf"
+					}
+				}
+			},
+			{
+				"sentence":"b. Verify that QCP addresses all contract-specific issues related to the paving operation.<br>c. Check if the evidence showing QCP was approved by the engineer. If not, notify the PEMS."
+			}
+		]
+	}
+}

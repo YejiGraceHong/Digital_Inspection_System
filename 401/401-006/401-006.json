@@ -1,0 +1,37 @@
+{
+	"id": "401-006",
+	"subSection": "401.10",
+	"checkQuestion": {
+		"contents":[
+			{
+				"sentence":"Was the paver equipped and used in accordance with the following:<br>(a) The paver shall be equipped with means of preventing the segregation of the coarse aggregate particles when moving the mixture from the paver hopper to the paver augers.<br>(b) The means and methods used shall be in accordance with the paver manufacturer’s instructions and may consist of chain curtains, deflector plates, or other such devices, or any combination of these."
+			}
+		]
+	},
+	"rationale": {
+		"contents":[
+			{
+				"sentence":"To mitigate segregation which results in a longitudinal crack on the finished pavement"
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a.	Check if the paver is equipped with means of preventing segregation.<br>b.	Ask the contractor to provide the paver manufacturer's instructions and check if the means and methods used follow the instructions."
+			},
+			{
+				"image":{
+					"location":"AsphaltPaver.png",
+					"caption":"Asphalt Paver",
+					"reference":{
+						"author": "INDOT",
+						"title":"GIFE 13.24",
+						"year":"2024",
+						"url":"../../relevantMaterial/GIFE 13.24.pdf"
+					}
+				}
+			}
+		]
+	}
+}

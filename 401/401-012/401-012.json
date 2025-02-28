@@ -1,0 +1,25 @@
+{
+	"id": "401-012",
+	"subSection": "401.12",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were the operations in compliance with the QCP?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure that the operations are conducted without violations of compliance with the QCP"
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. Confirm that the operations were in compliance with the QCP.<br>b. Notify the PEMS when the corresponding check points are not met by the Contractor."
+			}
+		]
+	}
+}

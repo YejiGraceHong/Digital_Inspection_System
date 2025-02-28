@@ -1,0 +1,43 @@
+{
+	"id": "401-019",
+	"subSection": "401.14",
+	"checkQuestion": {
+		"contents":[
+			{
+				"sentence":"Were paver tunnel plates and augers extending to within 12-18 inches of the end gate?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To control material flow at outer edges of screed and deliver homogenous HMA at joint",
+				"reference": {
+					"author":"Asphalt Institute and FHWA",
+					"title":"Best Practices for Specifying and Constructing HMA Longitudinal Joints",
+					"year":"2017",
+					"url": "https://www.asphaltinstitute.org/wp-content/uploads/Longitudinal-Joint-Workshop-Slides-3_2017-1.pdf"
+				}
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that the paver tunnel plates and augers were extending within 12-18 inches of the end gate as in the following figure:"
+			},
+			{
+				"image": {
+					"location":"paver_instruction.png",
+					"caption": "End gate, tunnel plates and augers and the ideal distance between them - Modified from ",
+					"reference": {
+						"author":"Asphalt Institute and FHWA",
+						"title":"Best Practices for Specifying and Constructing HMA Longitudinal Joints",
+						"year":"2017",
+						"url": "https://www.asphaltinstitute.org/wp-content/uploads/Longitudinal-Joint-Workshop-Slides-3_2017-1.pdf"
+					}
+				}
+			}
+		]
+	}
+}

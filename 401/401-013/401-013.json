@@ -1,0 +1,37 @@
+{
+	"id": "401-013",
+	"subSection": "401.13",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were HMA courses of less than 138 lb/sq yd placed when the ambient temperature and the temperature of the surface was 45°F or above? Note that no mixture shall be placed on a frozen subgrade."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To avoid performance loss of HMA caused by excessive lay rate or low temperature. The excessive lay rate results in reduced structural integrity, premature cracking and rutting, and drainage problems. The low temperature of PG binder causes cracking ",
+				"reference": {
+					"author": "INDOT and APAI",
+					"title": "INDOT Certified Asphalt Technician Program 2021",
+					"year": "2021",
+					"url": "https://www.asphaltindiana.org/docs/ICAT_Manual_2021-ALL.pdf"
+				}
+			},
+			{
+				"sentence": "."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. Lay rate: Confirm that the HMA courses of less than 138 lb/sq yd were placed.<br>"
+			},
+			{
+				"sentence": "b. Temperature: Confirm that the HMA courses were placed when the ambient temperature and the temperature of the surface was 45°F or above."
+			}
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"id": "401-017",
+	"subSection": "401.14",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were automatic slope and grade controls used as outlined in the QCP?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To enable the paver to place the asphalt course at the proper profile and cross slope ",
+				"reference": {
+					"author": "INDOT",
+					"title": "GIFE 13.24",
+					"year": "2024",
+					"url": "../../relevantMaterial/GIFE 13.24.pdf"
+				}
+			},
+			{
+				"sentence":"."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. Confirm that the automatic slope and grade controls were used unless specified in the QCP. Normally automatic controls are required unless existing grades at roadway intersections or a drainage structure must be met or if paving shoulders, temporary detours, behind curbs, or in other areas where its use is impractical as determined by the Engineer ",
+				"reference": {
+					"author": "FHWA",
+					"title": "Hot Mix Asphalt Pavement Guidelines",
+					"year": "n.d.",
+					"url": "https://www.fhwa.dot.gov/construction/reviews/revhma01.pdf"
+				}
+			},
+			{
+				"sentence":". <br>b. Notify the PEMS when the corresponding check points are not met by the Contractor."
+			}
+		]
+	}
+}

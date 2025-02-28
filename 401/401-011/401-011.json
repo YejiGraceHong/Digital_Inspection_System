@@ -1,0 +1,92 @@
+{
+	"id": "401-011",
+	"subSection": "401.11",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were rubblized concrete pavements primed in accordance with "
+			},
+			{
+				"relevantMaterial":{
+					"text":"SS 405",
+					"location":"../../relevantMaterial/SS 405.pdf"
+				}
+			},
+			{
+				"sentence":"?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To prepare and treat an existing pavement, in case it is rubblized Portland Cement Concrete Pavement (PCCP), as specified in Section "
+			},
+			{
+				"relevantMaterial":{
+					"text":"SS 405",
+					"location":"../../relevantMaterial/SS 405.pdf"
+				}
+			},
+			{
+				"sentence":"."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that rubblized concrete pavements were primed in accordance with Check items in Section "
+			},
+			{
+				"relevantMaterial":{
+					"text":"SS 405",
+					"location":"../../relevantMaterial/SS 405.pdf"
+				}
+			},
+			{
+				"sentence":":<br>"
+			},
+			{
+				"relevantCheckItems": [
+					{
+						"ID": "405-001",
+						"Description": "Asphalt Materials"
+					},
+					{
+						"ID": "405-002",
+						"Description": "Cover Aggregate"
+					},
+					{
+						"ID": "405-003",
+						"Description": "Weather Limitation"
+					},
+					{
+						"ID": "405-004",
+						"Description": "Equipment"
+					},
+					{
+						"ID": "405-005",
+						"Description": "Preparation of Surface"
+					},
+					{
+						"ID": "405-006",
+						"Description": "Application Rate"
+					},
+					{
+						"ID": "405-007",
+						"Description": "Carpet Drag"
+					},
+					{
+						"ID": "405-008",
+						"Description": "Traffic Maintenance"
+					},
+					{
+						"ID": "405-009",
+						"Description": "Protection of Surface"
+					}
+				]
+			}
+		]
+	}
+}

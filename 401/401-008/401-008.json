@@ -1,0 +1,136 @@
+{
+	"id": "401-008",
+	"subSection": "401.10",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence":"Segregation, flushing, or bleeding of HMA mixtures will NOT be allowed and be referred to the Department's Division of Materials and Tests for adjudication as failed material in accordance with "
+			},
+			{
+				"relevantMaterial":{
+					"text":"SS 105.03",
+					"location":"../../relevantMaterial/SS 105.03.pdf"
+				}
+			},
+			{
+				"sentence":"."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "Can lead to reduced pavement life, rutting, raveling, and moisture damage"
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Check if there is segregation, flushing, or bleeding after compaction.<br>&nbsp;&nbsp;&nbsp;&nbsp;a. Segregation ",
+				"reference": {
+					"author": "INDOT",
+					"title": "GIFE 13.15",
+					"year": "2024",
+					"url": "../../relevantMaterial/GIFE 13.15.pdf"
+				}
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fine and coarse aggregates separated from each other during the hauling or paving operation<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segregation appearance:<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Primarily coarse aggregates with no fine aggregates (the appearance is similar to an open graded mixture)<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Primarily asphalt coated fines with few pieces of coarse aggregates (the appearance is similar to a sand surface)<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Common causes of segregation: <br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Improper loading of trucks<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Faulty operation of the paver auger<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Forced stop of pavers because of running out of a mixture in the hopper<br>"
+			},
+			{
+				"image":{
+					"location":"segregation.jpg",
+					"caption":"Examples of Segregation",
+					"reference":{
+						"author":"Shi et al.",
+						"title":"Evaluating and quantifying segregation in asphalt pavement construction: A state-of-the-practice survey",
+						"year":"2023",
+						"url": "https://www.sciencedirect.com/science/article/pii/S0950061823009182"
+					}
+				}
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;b. Flushing",
+				"reference": {
+					"author": "INDOT",
+					"title": "GIFE 13.15",
+					"year": "2024",
+					"url": "../../relevantMaterial/GIFE 13.15.pdf"
+				}
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liquid asphalt collected on the surface on the course <br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Common causes of flushing: <br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Excess tack coat being brought up through the course<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Improper mixing of the materials<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Too much PG binder in the mixture<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;c. Bleeding<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identified by a film of bituminous material on the pavement surface that creates a shiny, glass-like reflective surface that may be tacky to the touch in warm weather",
+				"reference": {
+					"author": "FHWA",
+					"title": "Distress Identification Manual for The Long-Term Pavement Performance Program (FHWA-HRT-13-092)",
+					"year": "2014",
+					"url": "https://www.fhwa.dot.gov/publications/research/infrastructure/pavements/ltpp/13092/004.cfm"
+				}
+			},
+			{
+				"sentence": ".<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Common causes of bleeding:<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• When asphalt binder fills the aggregate voids during hot weather or traffic compaction, and then expands onto the pavement surface ",
+				"reference": {
+					"author": "Pavement Interactive",
+					"title": "Pavement Distresses",
+					"year": "n.d.",
+					"url": "https://pavementinteractive.org/reference-desk/pavement-management/pavement-distresses/#:~:text=Possible%20Causes%3A%20Bleeding%20occurs%20when,the%20pavement%20surface%20over%20time"
+				}
+			},
+			{
+				"sentence":".<br>"
+			},
+			{
+				"image": {
+					"location":"bleeding.jpg",
+					"caption": "Example of Bleeding",
+					"reference": {
+						"author":"Washington Asphalt Pavement Association",
+						"title":"Bleeding",
+						"year":"n.d.",
+						"url": "https://www.asphaltwa.com/bleeding/"
+					}
+				}
+			}
+		]
+	}
+}

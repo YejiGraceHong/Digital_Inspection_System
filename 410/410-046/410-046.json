@@ -1,0 +1,67 @@
+{
+	"id": "410-046",
+	"subSection": "410.18",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "At locations where the inertial profiler is being used on a surface course, were all areas under category Type A, as defined in "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 401.19(c)",
+					"location": "../../relevantMaterial/SS 401.19(c).pdf"
+				}
+			},
+			{
+				"sentence": ", having a localized roughness in excess of 160 in./mi or category Type B in excess of 170 in./mi utilizing continuous IRI with a 25 ft window corrected subject to approval by the Engineer? After ALRs have been identified, a grinding simulation shall be performed to estimate whether the ALR can be corrected to an IRI value of less than 160 in./mi with no more than a 1/4 in. max grind depth at any spot. If such correction is not possible, then an ALR with an IRI value of less than 190 in./mi can remain uncorrected if approved by the Engineer, and an ALR with an IRI value greater than 190 in./mi shall require full depth removal and replacement of the surface course of sufficient area to meet specifications."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure localized roughness areas meet smoothness standards and prevent potential ride quality issues."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "At locations where the inertial profiler is being used on a surface course, confirm that all areas under conditions 1 or 2 are corrected subject to approval by the Engineer."
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;• Condition 1: Category Type A & having a localized roughness in excess of 160 in./mi utilizing continuous IRI with a 25 ft window"
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;• Condition 2: Category Type B & having a localized roughness in excess of 170 in./mi utilizing continuous IRI with a 25 ft window"
+			},
+			{
+				"sentence": "<br>If the ALR cannot be corrected to an IRI value of less than 160 in./mi with no more than ¼ in. max grind depth at any spot, then an ALR with an IRI value of less than 190 in./mi can remain uncorrected if approved by the Engineer. An ALR with an IRI value greater than 190 in./mi shall require full-depth removal and replacement of the surface course of sufficient area to meet specifications."
+			},
+			{
+				"sentence": "<br><br>Type A",
+				"reference": {
+					"author": "INDOT",
+					"title": "SS 401.19(c)",
+					"year": "2024",
+					"url": "../../relevantMaterial/SS 401.19(c).pdf"
+				}
+			},
+			{
+				"sentence": ":<br>Pavement on a non-interstate with more than a single opportunity to achieve a smooth ride or asphalt pavement on an interstate with a single opportunity or more. The following operations will be considered opportunities:<br>a. A layer of HMA base, intermediate, and surface; each layer is an opportunity. Wedge and level will not be considered an opportunity.<br>b. Profile milling to correct cross slope is considered an opportunity prior to placing base, intermediate, or surface HMA."
+			},
+			{
+				"sentence": "<br><br>Type B",
+				"reference": {
+					"author": "INDOT",
+					"title": "SS 401.19(c)",
+					"year": "2024",
+					"url": "../../relevantMaterial/SS 401.19(c).pdf"
+				}
+			},
+			{
+				"sentence": ":<br>Pavement that is not included in the description above under Type A."
+			}
+		]
+	}
+}

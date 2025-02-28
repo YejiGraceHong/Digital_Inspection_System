@@ -1,0 +1,37 @@
+{
+	"id": "410-002",
+	"subSection": "410.04",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Was a DMF submitted in a format acceptable to the Engineer one week prior to use?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure that the DMF meets the requirements in advance."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that the DMF that includes the following information related to the mixture design was submitted to the Engineer one week prior to use",
+				"reference": {
+					"author": "INDOT",
+					"title": "GIFE 13.6",
+					"year": "2024",
+					"url": "../../relevantMaterial/GIFE 13.6.pdf"
+				}
+			},
+			{
+				"sentence": ":<br>• Producer (Contractor)<br>• Plant Location<br>• Material Identification/Sources-PG binder, coarse and fine aggregates<br>• DMF number<br>• Applicable ESAL Categories<br>• Mixture Course and Nominal Aggregate Designation<br>• Gradation Information<br>• Specific Gravity<br>• Lab and Plant Mixture Temperatures<br>• Reclaimed Asphalt Pavement (RAP)/Reclaimed Asphalt Shingles (RAS) Content<br>• Volumetric Properties<br>• Mixture Adjustment Factor, MAF<br>• Other Miscellaneous Design Information."
+			},
+			{
+				"sentence": "District Materials and Tests (DMT) personnel are a resource to answer questions regarding DMFs."
+			}
+		]
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"id": "410-037",
+	"subSection": "410.18",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Did the contractor furnish, calibrate, and operate the inertial profiler in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "ITM 917",
+					"location": "../../relevantMaterial/ITM 917.pdf"
+				}
+			},
+			{
+				"sentence": " for the acceptance of longitudinal smoothness on the mainline traveled way and ramps, including adjacent acceleration or deceleration lanes, where all of the following conditions are met:<br>1. The posted speed is greater than 45 mph.<br>2. The traveled way width and slope are constant and is at least 0.5 mi in length.<br>3. The HMA is placed on a milled surface and the planned lay rate for a single lift is 165 lb/sq yd or greater, or the total combined planned lay rate of surface, intermediate, and base courses is 385 lb/sq yd or greater."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To assess the smoothness of HMA pavements appropriately using inertial profilers."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence":" ",
+				"reference": {
+						"author": "INDOT",
+						"title": "ITM 917",
+						"year": "2023",
+						"url": "../../relevantMaterial/ITM 917.pdf"
+					}
+			},
+			{
+				"sentence": "<br>a. Furnishing the Inertial Profiler:<br>Equipment Requirements: Confirm that the inertial profiler is a high-speed, full-size, motor vehicle-mounted profiler with two-line lasers, spaced 70 in. apart (±2 in.).<br>Certification: Confirm that the inertial profiler is certified on a Department test track prior to use on a project."
+			},
+			{
+				"sentence": "<br>b. Calibration of the Inertial Profiler:<br>Longitudinal Distance Test: The profiler is navigated over a measured section of at least 528 feet to verify the accuracy of its distance measurement index (DMI). At least 2 runs at the lowest and highest test speeds of the inertial profiler shall be made resulting in at least 4 runs. The absolute difference between the DMI readings and the known distance of the path tested for each run must be less than 0.15%.<br>Block Test: This involves using flat plates or gauge blocks of known thickness to check the profiler’s vertical height sensors. Three measurements will be taken on each side of the block and the average of the measurements will be determined. A 1 in. and 2 in. gauge blocks are required. The difference between the profiler’s measured block thickness and the known average block thickness shall be less than or equal to 0.01 inch.<br>Bounce Test: This test checks the stability of the profiler’s sensors by simulating travel without actual movement. Using the equipment’s normal data collection software, a data collection run is done using a simulated travel speed at the midpoint of the manufacturer’s recommended operational speed range.<br>- Simulated travel distance: minimum 2,400 ft (minimum 900 ft of static profile + minimum 600 ft of bounce profile + minimum 900 ft of static profile)<br>- Bounce profile: The sensors are moved vertically from 1 in. to 2 in.<br>- The IRI (International Roughness Index) for the static portion of the bounce test must be less than 3 in./mile. The IRI for the bounce portion of the bounce test must be less than 8 in./mile."
+			},
+			{
+				"sentence": "<br>c. Operating the Inertial Profiler:<br>Pre-Operation Checks: Confirm that the roadway is clean and dry before data collection.<br>Data Collection: The profiler should operate at a constant speed within the manufacturer's recommended range, without braking or stopping during the run. All data collected outside this speed range or with braking or stopping during collection is not valid and should be remeasured. Data should be collected simultaneously in both wheel paths and in the direction of traffic.<br>Post-Operation: After completing the measurement run, the profiler data should be saved in an approved electronic format."
+			},
+			{
+				"image": {
+					"location": "HighSpeedInertialProfiler.png",
+					"caption": "High-speed Inertial Profiler",
+					"reference": {
+						"author": "FHWA",
+						"title": "Pavements - Inertial Profiler – Pavement",
+						"year": "n.d.",
+						"url": "https://infotechnology.fhwa.dot.gov/inertial-profiler-road-pavement/"
+					}
+				}
+			}
+		]
+	}
+}

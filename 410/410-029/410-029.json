@@ -1,0 +1,25 @@
+{
+	"id": "410-029",
+	"subSection": "410.15",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were longitudinal joints in the surface at the lane lines of the pavement?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To enhance durability of the pavement and achieve smooth ride quality by reducing wheel loads on the joints"
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "<br>Confirm that longitudinal joints were in the surface at the lane lines of the pavement."
+			}
+		]
+	}
+}

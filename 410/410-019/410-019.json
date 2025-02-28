@@ -1,0 +1,145 @@
+{
+	"id": "410-019",
+	"subSection": "410.14",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Was the mixture placed upon an approved surface by means of a paver or other mechanical devices in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 409.03",
+					"location": "../../relevantMaterial/SS 409.03.pdf"
+				}
+			},
+			{
+				"sentence": "? (Note that mixtures in areas inaccessible to mechanical devices may be placed by other methods.)"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To utilize laydown equipment with features as specified in "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 409.03",
+					"location": "../../relevantMaterial/SS 409.03.pdf"
+				}
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "<br>Confirm that the mixture was placed upon an approved surface by means of a paver or other mechanical devices in accordance with the following Check items in "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 409.03",
+					"location": "../../relevantMaterial/SS 409.03.pdf"
+				}
+			},
+			{
+				"sentence":":"
+			},
+			{
+				"relevantCheckItems": [
+					{
+						"ID": "409-007",
+						"Description": "Distributor"
+					},
+					{
+						"ID": "409-008",
+						"Description": "Truck Conditions"
+					},
+					{
+						"ID": "409-009",
+						"Description": "Truck Beds"
+					},
+					{
+						"ID": "409-010",
+						"Description": "Hauling Equipment – Watertight Cover"
+					},
+					{
+						"ID": "409-011",
+						"Description": "Paver – Self-propelled"
+					},
+					{
+						"ID": "409-012",
+						"Description": "Paver – Automatic Control"
+					},
+					{
+						"ID": "409-013",
+						"Description": "Paver – Grade Leveling"
+					},
+					{
+						"ID": "409-014",
+						"Description": "Paver – Expendable Screeds"
+					},
+					{
+						"ID": "409-015",
+						"Description": "Paver – Auger Extension"
+					},
+					{
+						"ID": "409-016",
+						"Description": "Safety Edge"
+					},
+					{
+						"ID": "409-017",
+						"Description": "Widener"
+					},
+					{
+						"ID": "409-018",
+						"Description": "Inaccessible Sections"
+					},
+					{
+						"ID": "409-019",
+						"Description": "Compaction Equipment Condition"
+					},
+					{
+						"ID": "409-020",
+						"Description": "Roller Wheels Condition"
+					},
+					{
+						"ID": "409-021",
+						"Description": "Tandem Roller"
+					},
+					{
+						"ID": "409-022",
+						"Description": "Three-Wheel Roller"
+					},
+					{
+						"ID": "409-023",
+						"Description": "Pneumatic Tire Roller"
+					},
+					{
+						"ID": "409-024",
+						"Description": "Vibratory Roller"
+					},
+					{
+						"ID": "409-025",
+						"Description": "Oscillatory Roller"
+					},
+					{
+						"ID": "409-026",
+						"Description": "Trench Roller"
+					},
+					{
+						"ID": "409-027",
+						"Description": "Specialty Roller"
+					},
+					{
+						"ID": "409-028",
+						"Description": "Aggregate Spreader"
+					},
+					{
+						"ID": "409-029",
+						"Description": "Rotary Power Broom"
+					}
+				]
+			}
+		]
+	}
+}

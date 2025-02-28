@@ -1,0 +1,67 @@
+{
+	"id": "410-036",
+	"subSection": "410.02",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were pavement corrugations in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 606",
+					"location": "../../relevantMaterial/SS 606.pdf"
+				}
+			},
+			{
+				"sentence": "?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure that corrugations are producing the desired effect of sound and vibration to alert drivers they are departing lane."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that pavement corrugations were in accordance with the following conditions",
+				"reference": {
+					"author": "INDOT",
+					"title": "SS 606",
+					"year": "2024",
+					"url": "../../relevantMaterial/SS 606.pdf"
+				}
+			},
+			{
+				"sentence": ":<br>&nbsp;&nbsp;&nbsp;&nbsp;a. Construction: The corrugations shall be constructed by cutting smooth strips in existing or newly constructed pavement. The operation shall be conducted by means of a cutting machine that provides a series of smooth cuts without tearing or snagging. The equipment shall include guides to maintain uniformity and consistency in the alignment of the strips."
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;b. Control Points: When corrugations are installed, control points are required as a guide for milling corrugations and shall be spotted with paint for the full length of the road to be milled. Control points along tangent sections shall be spaced at a maximum interval of 100 ft. The location of control points shall be as approved prior to the milling operations."
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;c. Type: Milled HMA corrugations shall be the type designated in the contract documents, Conventional or Sinusoidal."
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;d. Sealing: Corrugations installed on HMA shall be sealed using liquid asphalt sealant in accordance with "
+			},
+			{
+				"relevantMaterial":{
+					"text": "Check item 401-031 (Liquid Asphalt Sealant)",
+					"location": "../../401/401-031/401-031.html"
+				}
+			},
+			{
+				"sentence": ".<br>&nbsp;&nbsp;&nbsp;&nbsp;e. Installation Tolerances: Lateral deviation of milled corrugations shall not exceed 1 in. in 100 ft. The alignment of all pavement markings placed within rumble stripes shall be ±1/2 in. of its specified location."
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;f. Maintenance of Traffic: The rumble stripe traffic control procedures shall be submitted to the Engineer. Vehicles used in performing the milling, sweeping, vacuuming, or sealing operations shall have a rear escort vehicle that follows at a distance of 100 to 500 ft."
+			},
+			{
+				"sentence": "<br>&nbsp;&nbsp;&nbsp;&nbsp;g. Method of Measurement: Corrugations will be measured by the linear foot, measured parallel to the center line of the roadway. Gaps longer than 20 ft will not be included in the measurement for milled corrugations."
+			}
+		]
+	}
+}

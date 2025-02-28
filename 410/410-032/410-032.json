@@ -1,0 +1,61 @@
+{
+	"id": "410-032",
+	"subSection": "410.15",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Was the application of joint adhesive in accordance with the following:<br>(a) The joint adhesive shall be applied to the face of the previously constructed edge at the joint using a wand applicator.<br>(b) Prior to application of the joint adhesive, the joint face shall be dry and free of loose material and foreign objects.<br>(c) The adhesive shall be applied on the joint face 1/8 in. thick at the temperature recommended by the manufacturer.<br>(d) Excess joint adhesive shall NOT be allowed to pool on the top of the previously constructed pavement course or the pavement to be overlaid.<br>(e) The application of the adhesive shall be made within the same day, but at least 30 minutes prior to construction of the longitudinal joint."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To achieve consistent and strong adhesion and to promote the uniformity and durability of the HMA pavement."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. Where to apply: Joint adhesive is applied to the face of the previously constructed edge at the joint<br>&nbsp;&nbsp;&nbsp;Device: Using a wand applicator"
+			},
+			{
+				"sentence": "<br>b. Joint Face: Dry and free of loose material and foreign objects"
+			},
+			{
+				"sentence": "<br>c. Thickness: Applied on the joint face 1/8 in. thick<br>Temperature: At the temperature recommended by the manufacturer"
+			},
+			{
+				"sentence": "<br>d. No Pooling: Joint adhesive should not pool on the top of the course."
+			},
+			{
+				"sentence": "<br>e. Time: The application should be made within the same day & at least 30 min. prior to longitudinal joint construction."
+			},
+			{
+				"image": {
+					"location": "WandApplicator.jpg",
+					"caption": "Example of Wand Applicator",
+					"reference": {
+						"author": "Crafco Inc.",
+						"title": "Sealant C Pavement Joint Adhesive",
+						"year": "n.d.",
+						"url": "https://shopcrafco.com/products/sealant-c-pavement-joint-a"
+					}
+				}
+			},
+			{
+				"image": {
+					"location": "WandApplicator2.jpg",
+					"caption": "Example of Wand Applicator",
+					"reference": {
+						"author": "Infrapave Inc.",
+						"title": "Pavement Joint Adhesive",
+						"year": "n.d.",
+						"url": "https://infrapave.ca/en/product/34524-pavement-joint-adhesive/"
+					}
+				}
+			}
+		]
+	}
+}

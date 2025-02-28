@@ -1,0 +1,34 @@
+{
+	"id": "410-018",
+	"subSection": "410.13",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were SMA courses placed when the ambient temperature and the temperature of the surface on which it is to be placed is 45°F or above?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To avoid performance loss of SMA caused by low temperature. The low temperature of PG binder causes cracking ",
+				"reference": {
+					"author": "INDOT and APAI",
+					"title": "INDOT Certified Asphalt Technician Program 2021",
+					"year": "2021",
+					"url": "https://www.asphaltindiana.org/docs/ICAT_Manual_2021-ALL.pdf"
+				}
+			},
+			{
+				"sentence": "."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "<br>Confirm that SMA courses were placed when the ambient temperature and the temperature of the surface was 45°F or above."
+			}
+		]
+	}
+}

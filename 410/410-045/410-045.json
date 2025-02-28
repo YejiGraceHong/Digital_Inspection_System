@@ -1,0 +1,25 @@
+{
+	"id": "410-045",
+	"subSection": "410.18",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "At locations where the inertial profiler is being used on an intermediate course, were all areas having localized roughness in excess of 160 in./mi utilizing continuous IRI with a 25 ft window corrected subject to approval by the Engineer?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure localized roughness areas meet smoothness standards and prevent potential ride quality issues."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "At locations where the inertial profiler is being used on an intermediate course, confirm that all areas having localized roughness in excess of 160 in./mi utilizing continuous IRI with a 25 ft window were corrected subject to approval by the Engineer."
+			}
+		]
+	}
+}

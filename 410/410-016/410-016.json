@@ -1,0 +1,87 @@
+{
+	"id": "410-016",
+	"subSection": "410.11",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were contact surfaces of curbing, gutters, manholes, and other structures tacked in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 406",
+					"location": "../../relevantMaterial/SS 406.pdf"
+				}
+			},
+			{
+				"sentence": "?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure that tack coat was applied to contact surfaces of curbing, gutters, manholes, and other structures using appropriate methods."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "<br>Confirm that contact surfaces of curbing, gutters, manholes, and other structures were tacked in accordance with the following Check items in"
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 406",
+					"location": "../../relevantMaterial/SS 406.pdf"
+				}
+			},
+			{
+				"sentence":":"
+			},
+			{
+				"relevantCheckItems": [
+					{
+						"ID": "406-001",
+						"Description": "Material"
+					},
+					{
+						"ID": "406-002",
+						"Description": "Foreign material removal"
+					},
+					{
+						"ID": "406-003",
+						"Description": "Humidity"
+					},
+					{
+						"ID": "406-new001",
+						"Description": "Uniform application"
+					},
+					{
+						"ID": "406-new002",
+						"Description": "Break and set"
+					},
+					{
+						"ID": "406-new003",
+						"Description": "Correcting Inadequate Coverage"
+					},
+					{
+						"ID": "406-new004",
+						"Description": "Application rate"
+					},
+					{
+						"ID": "406-005",
+						"Description": "Clogged Nozzle"
+					},
+					{
+						"ID": "406-006",
+						"Description": "Distributor"
+					},
+					{
+						"ID": "406-007",
+						"Description": "Excessive Tack Coat"
+					}
+				]
+			}
+		]
+	}
+}

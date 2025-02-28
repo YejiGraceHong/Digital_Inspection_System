@@ -1,0 +1,46 @@
+{
+	"id": "401-044",
+	"subSection": "401.18",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were the smoothness sections measured in accordance with the following:<br>(a) The project area will be divided into individual smoothness sections measuring 0.1 mi in length for each lane.<br>(b) The paving exceptions and areas exempt from inertial profiler operation will be in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "ITM 917",
+					"location": "../../relevantMaterial/ITM 917.pdf"
+				}
+			},
+			{
+				"sentence": "."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To measure the smoothness for appropriate areas within designated length, providing reliable data for evaluation and quality control."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that the project area will be divided into individual smoothness sections measuring 0.1 mi in length for each lane."
+			},
+			{
+				"sentence": "Confirm that the following areas are exempt from inertial profiler operation:",
+				"reference": {
+					"author": "INDOT",
+					"title": "ITM 917",
+					"year": "2024",
+					"url": "../../relevantMaterial/ITM 917.pdf"
+				}
+			},
+			{
+				"sentence": "<br>• The first and last 50 ft within the entire construction paving limits<br>• From 50 ft before through 50 ft after each bridge and approach slab<br>• From 50 ft before through 50 ft after each at-grade railroad crossing<br>• From 10 ft before through 10 ft after each casting located within each wheel path."
+			}
+		]
+	}
+}

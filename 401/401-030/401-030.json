@@ -1,0 +1,82 @@
+{
+	"id": "401-030",
+	"subSection": "401.15",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were the joints sealed in accordance with the following:<br>(a) All 9.5 mm and 12.5 mm surface mixture longitudinal joints that have the joint adhesive applied shall be sealed using SS-1h, RPE, or AE-NT asphalt emulsion in accordance with 902.01(b).<br>(b) The sealing operation shall not begin until all density cores in accordance with 401.16 and 401.20 have been obtained and the installation of pavement corrugations, when specified in accordance with 606, has been completed."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To seal joints with appropriate materials in the right sequence of applications."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. Confirm that all 9.5 mm and 12.5 mm surface mixture longitudinal joints that have the joint adhesive applied were sealed using SS-1h, RPE, or AE-NT asphalt emulsion with the following conditions:<br>"
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;i. For SS-1h, confirm that the material is in accordance with AASHTO M 140, except the cement mixing test is waived",
+				"reference": {
+					"author": "INDOT",
+					"title": "SS 902.01(b)",
+					"year": "2024a",
+					"url": "../../relevantMaterial/SS 902.01(b).pdf"
+				}
+			},
+			{
+				"sentence": ".<br>&nbsp;&nbsp;&nbsp;&nbsp;ii. For RPE (Rapid Penetrating Emulsion), confirm that the material is in accordance with the following table in "
+			},
+			{
+				"relevantMaterial":{
+					"text":"SS 902.01(b)4",
+					"location":"../../relevantMaterial/SS 902.01(b)4.pdf"
+				}
+			},
+			{
+				"sentence":":<br>"
+			},
+			{
+				"image":{
+					"location":"RPEtest.png",
+					"caption":"Test Results of Certified RPE",
+					"reference":{
+						"author": "INDOT",
+						"title":"SS 902.01(b)4",
+						"year":"2024b",
+						"url":"../../relevantMaterial/SS 902.01(b)4.pdf"
+					}
+				}
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;iii. For AE-NT, confirm that the material is in accordance with the following table in "
+			},
+			{
+				"relevantMaterial":{
+					"text":"SS 902.01(b)",
+					"location":"../../relevantMaterial/SS 902.01(b).pdf"
+				}
+			},
+			{
+				"image":{
+					"location":"AENTtest.png",
+					"caption":"Test Results of Certified AE-NT",
+					"reference":{
+						"author": "INDOT",
+						"title":"SS 902.01(b)",
+						"year":"2024a",
+						"url":"../../relevantMaterial/SS 902.01(b).pdf"
+					}
+				}
+			},
+			{
+				"sentence": "b. Confirm that the sealing operation began after the completion of obtaining all density cores and, when specified, installing pavement corrugations."
+			}
+		]
+	}
+}

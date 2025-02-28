@@ -1,0 +1,25 @@
+{
+	"id": "401-053",
+	"subSection": "401.18",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "When underlying courses are exposed by corrective action, were they milled to a depth of 1 ½ in. and replaced with a surface course?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure that the pavement remains structurally integrated after corrective actions."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that the underlying courses exposed by corrective action were milled to a depth of 1 ½ inches and replaced with a surface course."
+			}
+		]
+	}
+}

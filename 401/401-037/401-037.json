@@ -1,0 +1,46 @@
+{
+	"id": "401-037",
+	"subSection": "401.16",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Was coring in accordance with the following:<br>(a) The Contractor shall obtain cores in the presence of the Engineer with a device that shall produce a uniform 6 ±0.25 in. diameter pavement sample.<br>(b) Coring shall be completed prior to the random location being covered by the next course.<br>(c) All core locations will be marked and shall be cored within two workdays of placement.<br>(d) The Contractor and the Engineer shall mark the core to define the course to be tested."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To obtain a core that adequately reflects the density of the pavement."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. Measure and check the diameter of the obtained core if it is 6 ±0.25 in."
+			},
+			{
+				"sentence": "<br>b. Check if the coring is completed before the random location is covered by the next course."
+			},
+			{
+				"sentence": "<br>c. Check if all core locations are marked and cored within two workdays of placement."
+			},
+			{
+				"sentence": "<br>d. Verify if Contractor personnel marked the course for which the density is to be determined on the core."
+			},
+			{
+				"image": {
+					"location": "CoreDiameter.png",
+					"caption": "The Diameter of Core",
+					"reference": {
+						"author": "Virginia Asphalt Association",
+						"title": "Cross Section of Asphalt",
+						"year": "n.d.",
+						"url": "https://vaasphalt.org/asphalt-basics/cross-section-of-asphalt/"
+					}
+				}
+			}
+		]
+	}
+}

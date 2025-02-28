@@ -1,0 +1,46 @@
+{
+	"id": "401-033",
+	"subSection": "401.15",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were transverse joints in accordance with the following:<br>(a) Transverse joints shall be constructed by exposing a near vertical full-depth face of the previous course.<br>(b) For areas inaccessible to rollers, other mechanical devices shall be used to achieve the required density.<br>(c) If constructed under traffic, temporary transverse joints shall be feathered to provide a smooth transition to the driving surface."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To ensure the structural integrity of the pavement, achieve designed density, and maintain ride quality and safety."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that transverse joints were in accordance with the following:<br>a. Transverse joints shall be constructed by exposing a near vertical full-depth face of the previous course.<br>b. For areas inaccessible to rollers, other mechanical devices shall be used to achieve the required density.<br>c. If constructed under traffic, temporary transverse joints shall be feathered to provide a smooth transition to the driving surface."
+			},
+			{
+				"sentence": "<br>• Feathering: The thin placement of patching materials because of curved or angled patch edges that do not allow adequate depth of placement",
+				"reference": {
+					"author": "FHWA",
+					"title": "Materials and Procedures for Rapid Repair of Partial-Depth Spalls in Concrete Pavements: Manual of Practice",
+					"year": "2000",
+					"url": "https://rosap.ntl.bts.gov/view/dot/56178"
+				}
+			},
+			{
+				"image": {
+					"location": "FeatheredPavementJoint.png",
+					"caption": "Example of a Feathered Pavement Joint",
+					"reference": {
+						"author": "FHWA",
+						"title": "Federal Highway Administration University Course on Bicycle and Pedestrian Transportation: Shared Roadways",
+						"year": "2006",
+						"url": "https://fhwa.dot.gov/publications/research/safety/pedbike/05085/chapt14.cfm"
+					}
+				}
+			}
+		]
+	}
+}

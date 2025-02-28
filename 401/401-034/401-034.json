@@ -1,0 +1,129 @@
+{
+	"id": "401-034",
+	"subSection": "401.16",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Were the compaction of mixtures in accordance with the following:<br>(a) For open graded mixtures, the compaction shall be performed with six passes of a static tandem roller. Vibratory rollers shall not be used on open graded mixtures.<br>(b) For 4.75 mm mixtures, the compaction shall be in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 402.15",
+					"location": "../../relevantMaterial/SS 402.15.pdf"
+				}
+			},
+			{
+				"sentence": ", except vibratory rollers shall be operated in static mode and the vertical impact force capability of oscillatory rollers shall NOT be used.<br>(c) For mixtures with original contract pay item quantities less than 300 tons, the compaction shall be in accordance with "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 402.15",
+					"location": "../../relevantMaterial/SS 402.15.pdf"
+				}
+			},
+			{
+				"sentence": "."
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To achieve the desired density while preserving the characteristics of different mixtures."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a. For open graded mixtures:<br>&nbsp;&nbsp;&nbsp;&nbsp;i. Check if the compaction is performed with six passes of a static tandem roller<br>&nbsp;&nbsp;&nbsp;&nbsp;ii. Check if vibratory rollers are not used"
+			},
+			{
+				"sentence": "<br>b. For dense graded 4.75 mm mixtures:<br>&nbsp;&nbsp;&nbsp;&nbsp;i. Confirm that the compaction was in accordance with the following Check items in "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 402.15",
+					"location": "../../relevantMaterial/SS 402.15.pdf"
+				}
+			},
+			{
+				"sentence": ":<br>"
+			},
+			{
+				"relevantCheckItems": [
+					{"ID": "402-030", "Description": "Compaction Equipment"},
+					{"ID": "402-031", "Description": "Roller Impact Prevention"},
+					{"ID": "402-034", "Description": "Roller Speed"},
+					{"ID": "402-035", "Description": "Marker Elimination"},
+					{"ID": "402-036", "Description": "Compaction Sequence"},
+					{"ID": "402-037", "Description": "Compaction of Longitudinal Joints"},
+					{"ID": "402-038", "Description": "Correction of Displacement"},
+					{"ID": "402-039", "Description": "Protecting Edges"},
+					{"ID": "402-040", "Description": "Moistening Wheels"},
+					{"ID": "402-041", "Description": "Inaccessible Areas"},
+					{"ID": "402-042", "Description": "Trench Roller"},
+					{"ID": "402-043", "Description": "Final Two Applications"},
+					{"ID": "402-044", "Description": "Cooling Mixture"},
+					{"ID": "402-045", "Description": "Transverse Rumble Strips"}
+				]
+			},
+			{
+				"sentence": "&nbsp;&nbsp;&nbsp;&nbsp;ii. Check if the compaction operation is in accordance with one of the options in the following table from "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 402.15",
+					"location": "../../relevantMaterial/SS 402.15.pdf"
+				}
+			},
+			{
+				"sentence": ":"
+			},
+			{
+				"image":{
+					"location":"Rollers.png",
+					"caption":"Number of Roller Applications",
+					"reference":{
+						"author": "INDOT",
+						"title":"SS 402.15",
+						"year":"2024",
+						"url":"../../relevantMaterial/SS 402.15.pdf"
+					}
+				}
+			},
+			{
+				"sentence": "<br>c. For mixtures with original contract pay item quantities less than 300 tons, confirm that the compaction was in accordance with the following Check items in "
+			},
+			{
+				"relevantMaterial": {
+					"text": "SS 402.15",
+					"location": "../../relevantMaterial/SS 402.15.pdf"
+				}
+			},
+			{
+				"sentence": ":<br>"
+			},
+			{
+				"relevantCheckItems": [
+					{"ID": "402-030", "Description": "Compaction Equipment"},
+					{"ID": "402-031", "Description": "Roller Impact Prevention"},
+					{"ID": "402-032", "Description": "Number of Applications for Low Lay Rate"},
+					{"ID": "402-033", "Description": "Number of Applications for High Lay Rate"},
+					{"ID": "402-034", "Description": "Roller Speed"},
+					{"ID": "402-035", "Description": "Marker Elimination"},
+					{"ID": "402-036", "Description": "Compaction Sequence"},
+					{"ID": "402-037", "Description": "Compaction of Longitudinal Joints"},
+					{"ID": "402-038", "Description": "Correction of Displacement"},
+					{"ID": "402-039", "Description": "Protecting Edges"},
+					{"ID": "402-040", "Description": "Moistening Wheels"},
+					{"ID": "402-041", "Description": "Inaccessible Areas"},
+					{"ID": "402-042", "Description": "Trench Roller"},
+					{"ID": "402-043", "Description": "Final Two Applications"},
+					{"ID": "402-044", "Description": "Cooling Mixture"},
+					{"ID": "402-045", "Description": "Transverse Rumble Strips"}
+				]
+			}
+		]
+	}
+}

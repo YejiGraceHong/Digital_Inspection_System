@@ -1,0 +1,34 @@
+{
+	"id": "401-028",
+	"subSection": "401.15",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence": "Was the material heated in a jacketed, double boiler melting kettle which has an attached pressure feed wand system with applicator shoe?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To heat the material in a safe, controlled and uniform manner",
+				"reference": {
+					"author": "FHWA",
+					"title": "Materials and Procedures for Sealing and Filling Cracks in Asphalt-Surfaced Pavements",
+					"year": "1999",
+					"url": "https://highways.dot.gov/media/7656"
+				}
+			},
+			{
+				"sentence": "."
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "Confirm that the material was heated in a jacketed, double boiler melting kettle which has an attached pressure feed wand system with applicator shoe."
+			}
+		]
+	}
+}

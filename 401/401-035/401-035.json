@@ -1,0 +1,70 @@
+{
+	"id": "401-035",
+	"subSection": "401.16",
+	"checkQuestion": {
+		"contents": [
+			{
+				"sentence":"Were the samples for density acceptance obtained from two random locations selected by the Engineer within each sublot in accordance with "
+			},
+			{
+				"relevantMaterial":{
+					"text":"ITM 802",
+					"location":"../../relevantMaterial/ITM 802.pdf"
+				}
+			},
+			{
+				"sentence":"?"
+			}
+		]
+	},
+	"rationale": {
+		"contents": [
+			{
+				"sentence": "To avoid bias and better represent the pavement quality"
+			}
+		]
+	},
+	"instruction": {
+		"contents": [
+			{
+				"sentence": "a.	Generate two random numbers: a, b",
+				"reference": {
+					"author": "Random.org",
+					"title": "True Random Number Service",
+					"year": "2024",
+					"url": "https://www.random.org/decimal-fractions/?num=2&dec=3&col=2&format=html&rnd=new"
+				}
+			},
+			{
+				"sentence": "<br>b.	Calculate longitudinal and transverse distances as following example:<br>"
+			},
+			{
+				"image":{
+					"location":"RandomLocationExample.png",
+					"caption":"Example of Calculating Longitudinal and Transverse Distances Using Random Numbers",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 802: Random Sampling",
+						"year":"2021",
+						"url":"../../relevantMaterial/ITM 802.pdf"
+					}
+				}
+			},
+			{
+				"sentence": "<br>c. Repeat 1-2 if the random location falls within the following conditions:"
+			},
+			{
+				"image":{
+					"location":"RandomLocation.png",
+					"caption":"Allowed and Prohibited Areas to Obtain Samples",
+					"reference":{
+						"author": "INDOT",
+						"title":"ITM 802: Random Sampling",
+						"year":"2021",
+						"url":"../../relevantMaterial/ITM 802.pdf"
+					}
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Page - Construction Process</title>
+    <style>
+      /* Container for the image and heading */
+        .image-heading-container {
+            display: flex;
+            align-items: center; /* Vertically center-align the heading with the image */
+            gap: 10px; /* Add space between the image and heading */
+        }
+
+        /* Style for the image */
+        .image-heading-container img {
+            width: 70px; /* Adjust the size of the image */
+            height: auto; /* Maintain the image aspect ratio */
+        }
+
+        /* Container for the images and captions */
+        .image-container {
+            display: flex;
+            /* justify-content: space-around; Spread images evenly */
+            align-items: center;
+        }
+
+        /* Style for each image and caption block */
+        .image-box {
+            text-align: center; /* Center the caption under each image */
+            margin: 5px;
+        }
+        .image-box:hover {
+            background-color: #ddd;
+        }
+
+        /* Style for the images */
+        .image-box img {
+            /* max-width: 100%; Ensure images fit within their container */
+            height: 100; /* Maintain aspect ratio */
+        }
+
+        /* Style the images */
+        .clickable-image {
+            cursor: pointer;
+            /* width: 150px; Adjust the size of the images
+            height: auto;
+            margin: 10px; */
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-heading-container">
+  <img src="main/INDOT-logo.jpg" height="100"></img>
+  <h1>INDOT Digital Inspection System</h1>
+</div>
+
+<h2>Section 410 QC/QA HMA - SMA Pavement</h2>
+<h3>Search by Construction Process</h3>
+<p>Click on the construction process for which you want to find applicable pay items:</p>
+
+<div class="image-container">
+  <div class="image-box">
+  <img src = "main/1_Design.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('D')"></img>
+  <p id="D">Design</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/2_Mixing.jpg" class="clickable-image" height = "150" onclick="searchPayItemByProcess('M')"></img>
+  <p id="M">Mixing</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/3_LoadingMixtureOntoTruck.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('LMT')"></img>
+  <p id="LMT">Loading Mixture onto Truck</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/4_Transport.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('T')"></img>
+  <p id="T">Transport</p>
+  </div>
+</div>
+
+<div class="image-container">
+  <div class="image-box">
+  <img src = "main/5_PreparingSubground.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('PS')"></img>
+  <p id="PS">Preparing Subground</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/6_SealantApplication.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('SA')"></img>
+  <p id="SA">Sealant Application</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/7_LoadingMixtureOntoPaver.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('LMP')"></img>
+  <p id="LMP">Loading Mixture onto Paver</p>
+  </div>
+</div>
+
+<div class="image-container">
+  <div class="image-box">
+  <img src = "main/8_Paving.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('P')"></img>
+  <p id="P">Paving</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/9_Compaction.png" class="clickable-image" height = "150" onclick="searchPayItemByProcess('C')"></img>
+  <p id="C">Compaction</p>
+  </div>
+  <div class="image-box">
+  <img src = "main/10_JointAdhesiveApplication.jpg" class="clickable-image" height = "150" onclick="searchPayItemByProcess('JAA')"></img>
+  <p id="JAA">Joint Adhesive Application</p>
+  </div>
+</div>
+
+<h3 id="print3"></h3>
+<p id="print3_explain"></p>
+<div id="search-container3"></div>
+<p id="excludedItems"></p>
+
+<h3 id="print4"></h3>
+<p id="print4_explain"></p>
+<div id="search-container4">
+
+
+
+<script>
+function searchPayItemByProcess(givenConstrProcID){
+
+  const paragraphs = document.querySelectorAll("p");
+    paragraphs.forEach(p => p.style.fontWeight = "normal");
+
+  let bold = document.getElementById(givenConstrProcID);
+  bold.style.fontWeight = "bold";
+
+  let json = '[{"ConstrProcID":"C","ConstrProc":"Compaction","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-026","Description":"Rollers for SMA"},{"ID":"410-027","Description":"Finished Thickness"},{"ID":"410-033","Description":"Transverse Joint"},{"ID":"410-035","Description":"Refilling Core Holes"},{"ID":"410-036","Description":"Pavement Corrugation"},{"ID":"410-037","Description":"Inertial Profiler"},{"ID":"410-039","Description":"Measurment of Smoothness Section"},{"ID":"410-045","Description":"Localized Roughness for Intermediate Course"},{"ID":"410-046","Description":"Localized Roughness for Surface Course"},{"ID":"410-048","Description":"Milling and Replacing Exposed Course"},{"ID":"410-050","Description":"Smoothness - 16 ft Straightedge"}]}]},{"ConstrProcID":"D","ConstrProc":"Design","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-002","Description":"DMF Submission"},{"ID":"410-003","Description":"Lots and Sublots"},{"ID":"410-004","Description":"JMF Submission"}]}]},{"ConstrProcID":"JAA","ConstrProc":"Joint Adhesive Application","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-030","Description":"Hot Poured Joint Adhesive"},{"ID":"410-032","Description":"Application of Joint Adhesive"}]}]},{"ConstrProcID":"LMP","ConstrProc":"Loading Mixture onto Paver","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]}]},{"ConstrProcID":"LMT","ConstrProc":"Loading Mixture onto Truck","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]}]},{"ConstrProcID":"M","ConstrProc":"Mixing","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]}]},{"ConstrProcID":"P","ConstrProc":"Paving","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-005","Description":"SMA Sampling"},{"ID":"410-008","Description":"Acceptance of Paving Equipment"},{"ID":"410-009","Description":"Equipment for SMA Operations"},{"ID":"410-013","Description":"Defective Mixture"},{"ID":"410-018","Description":"Temperature for Placement"},{"ID":"410-019","Description":"Equipment for Placement"},{"ID":"410-024","Description":"Automatic Slope and Grade Controls"},{"ID":"410-028","Description":"Safety Edge"},{"ID":"410-029","Description":"Longitudianl Joint"},{"ID":"410-031","Description":"Heating Material"},{"ID":"410-033","Description":"Transverse Joint"}]}]},{"ConstrProcID":"PS","ConstrProc":"Preparing Subground","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-014","Description":"Cleaning Surface"},{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]}]},{"ConstrProcID":"SA","ConstrProc":"Sealant Application","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-015","Description":"Milling and Tacking Asphalt Surface"},{"ID":"410-016","Description":"Tacking Complex Surface"}]}]},{"ConstrProcID":"T","ConstrProc":"Transport","PayItems":[{"ID":"410-000073","Description":"QC/QA-HMA, 4, 58E, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000074","Description":"QC/QA-HMA, 4, 58E, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-000075","Description":"QC/QA-HMA, 4, 58E, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09530","Description":"QC/QA-HMA, 4, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-09877","Description":"QC/QA-HMA, 4, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-10128","Description":"QC/QA-HMA, 3, 76, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11777","Description":"QC/QA-HMA, 4, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-11935","Description":"QC/QA-HMA, 3, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12320","Description":"QC/QA-HMA, 3, 76, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12333","Description":"QC/QA-HMA, 3, 70, SURFACE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12485","Description":"QC/QA-HMA, 4, 76, INTERMEDIATE, 12.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]},{"ID":"410-12672","Description":"QC/QA-HMA, 2, 70, SURFACE, 9.5 mm - SMA","Unit":"TON","CheckItems":[{"ID":"410-009","Description":"Equipment for SMA Operations"}]}]}]';
+
+  const procDict = JSON.parse(json);
+  let len_procDict = procDict.length; //len_procDict = 10;
+  var payItemList = [];
+  let ind = 0;
+  let constrProcDescription = "";
+
+  for (ind = 0; ind < len_procDict; ind++) {
+    var constrProcID = procDict[ind].ConstrProcID;
+    if (constrProcID === givenConstrProcID) {
+      //checkItemList = procDict[ind].CheckItems;
+      payItemList = procDict[ind].PayItems;
+      constrProcDescription = procDict[ind].ConstrProc;
+      break;
+    }
+  }
+
+  let printText = "";
+  //let len = checkItemList.length;
+  let len = payItemList.length;
+
+  const element = document.getElementById("search-container3");
+  element.replaceChildren();
+  const select = document.createElement("SELECT");
+
+  printText = "Applicable Pay Items during "+procDict[ind].ConstrProc;
+  select.id = "searchPayItem";
+  const option1 = document.createElement("OPTION");
+  const option1_text = document.createTextNode("--Select a Pay Item--");
+  option1.appendChild(option1_text);
+  select.appendChild(option1);
+  element.appendChild(select);
+
+  for (let i = 0; i < len; i++) {
+    var itemName = payItemList[i].ID;
+    var section = itemName.split("-")[0];
+
+    var option_i = document.createElement("OPTION");
+    option_i.value = itemName;
+    var option_i_text = document.createTextNode(itemName + "\t| " + payItemList[i].Description);
+    option_i.appendChild(option_i_text);
+    select.appendChild(option_i);
+  }
+
+
+  document.getElementById("print3").innerHTML = printText;
+  document.getElementById("print3_explain").innerHTML = "Click on the pay item you want to find applicable check items:";
+
+  const excluded = document.getElementById("excludedItems");
+  let excluded_text = "The following pay items are excluded in the pay item list:<br>- 410-12466 Void Reducing Asphalt Membrane for SMA<br>- 410-12665 SMA Spray Paver Emulsion";
+  excluded.innerHTML = excluded_text;
+
+  const button = document.createElement("BUTTON");
+  button.type = "submit";
+  const button_text = document.createTextNode("Submit");
+  button.appendChild(button_text);
+  element.appendChild(button);
+  button.onclick = function() {
+    const selected_payItem = select.value;
+    //console.log(selected_payItem);
+    //window.location.href = selected_checkItem;
+    searchCheckItemByPayItem(selected_payItem, procDict[ind].PayItems, constrProcDescription);
+  }
+
+  document.getElementById("print3").style.backgroundColor = "yellow";
+  document.getElementById("print3").scrollIntoView({ behavior: "smooth", block: "center" });
+
+  setTimeout(function() {
+    document.getElementById("print3").style.backgroundColor = "transparent";
+  }, 1000);
+}
+
+function searchCheckItemByPayItem(payItemID, payItems, constrProcDescription){
+
+  let printText = "";
+  let len_payItems = payItems.length;
+
+  const searchValue = payItemID;
+  const element = document.getElementById("search-container4");
+  //const select = document.createElement("SELECT");
+
+  for (let j=0; j<len_payItems; j++) {
+
+    if (payItems[j].ID == searchValue) {
+      element.replaceChildren();
+      let len = payItems[j].CheckItems.length;
+      if (len === 0){
+        printText += "No Applicable Check Items";
+        document.getElementById("print").innerHTML = printText;
+        break;
+      }
+
+      for (let i = 0; i < len; i++) {
+        var itemName = payItems[j].CheckItems[i].ID;
+        var section = itemName.split("-")[0];
+
+        var option_ii = document.createElement("button");
+        option_ii.innerText = itemName + "\t| " + payItems[j].CheckItems[i].Description;
+        option_ii.onclick = (function(section, itemName) {
+            return function() {
+                window.open(section + "/" + itemName + "/" + itemName + ".html", "_blank");
+            };
+        })(section, itemName);
+        element.appendChild(option_ii);
+        element.appendChild(document.createElement("br"));
+      }
+
+      document.getElementById("print4").innerHTML = "Applicable Check Items for Pay Item "+payItemID+" "+payItems[j].Description+" during "+constrProcDescription;
+      document.getElementById("print4_explain").innerHTML = "Click on the check item you want to explore in detail:";
+
+      document.getElementById("print4").style.backgroundColor = "yellow";
+      document.getElementById("print4").scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      setTimeout(function() {
+        document.getElementById("print4").style.backgroundColor = "transparent";
+      }, 1000);
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>

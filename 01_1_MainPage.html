@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Main Page</title>
+    <style>
+    	/* Container for the image and heading */
+        .image-heading-container {
+            display: flex;
+            align-items: center; /* Vertically center-align the heading with the image */
+            gap: 10px; /* Add space between the image and heading */
+        }
+
+        /* Style the tab */
+        .tab {
+		  float: left;
+		  border: 1px solid #ccc;
+		  background-color: #f1f1f1;
+		  width: 47%;
+		  height: 700px;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+		  display: block;
+		  background-color: inherit;
+		  color: black;
+		  padding: 16px 16px;
+		  width: 100%;
+		  border: none;
+		  outline: none;
+		  text-align: left;
+		  cursor: pointer;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+
+		#deactivated:hover {
+		  background-color: #ddd;
+		}
+		/* Change background color of buttons on hover */
+		#activated:hover {
+		  background-color: #ddd;
+		}
+		#defaultOpen:hover {
+		  background-color: #ddd;
+		}
+
+		button.active {
+		  background-color: #ccc;
+		}
+		#deactivated {
+    		color: grey; /* Set the font color to grey */
+		}
+
+
+		/* Style the tab content */
+		.tabcontent {
+		  float: left;
+		  padding: 0px 12px;
+		  border: 1px solid #ccc;
+		  width: 47%;
+		  border-left: none;
+		  height: 700px;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="image-heading-container">
+  <img src="main/INDOT-logo.jpg" height="100"></img>
+  <h1>INDOT Digital Inspection System</h1>
+</div>
+
+<h2>Division 400 Asphalt Pavements</h2>
+<p>Click on the section you want to search:</p>
+
+<div class="tab">
+	<button id="defaultOpen" onclick="createSearchLinks(event, '401')">Section 401 - QC/QA HMA Pavement</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '402')">Section 402 - HMA Pavement</button>
+
+	<button id="deactivated" onclick="createSearchLinks(event, '404')">Section 404 - Seal Coat</button>
+
+	<button id="deactivated" onclick="createSearchLinks(event, '405')">Section 405 - Prime Coat</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '406')">Section 406 - Tack Coat</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '407')">Section 407 - Dust Palliative</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '408')">Section 408 - Sealing or Filling Cracks and Joints</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '409')">Section 409 - Equipment</button>
+	
+	<button id="activated" onclick="createSearchLinks(event, '410')">Section 410 - QC/QA HMA - SMA Pavement</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '411')">Section 411 - Warranted Micro-Surfacing</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '412')">Section 412 - Fog Seal</button>
+	
+	<button id="deactivated" onclick="createSearchLinks(event, '414')">Section 414 - Ultrathin Bonded Wearing Course, Warrented</button>
+	
+</div>
+
+<div id="401" class="tabcontent">
+	<h3>Section 401 - QC/QA HMA Pavement</h3>
+	<p>One or more courses of QC/QA HMA base, intermediate, or surface mixtures constructed on prepared foundations</p>
+	<button onclick="window.open('02_1_1_401_SearchByConstrProc.html', '_blank')">Search by Construction Process</button><br>
+	<button onclick="window.open('02_2_1_401_SearchByPayItem.html', '_blank')">Search by Pay Item</button><br>
+</div>
+
+<div id="402" class="tabcontent">
+	<h3>Section 402 - HMA Pavement (Deactivated)</h3>
+	<p>One or more courses of miscellaneous mixtures</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="404" class="tabcontent">
+	<h3>Section 404 - Seal Coat (Deactivated)</h3>
+	<p>One or more applications of asphalt material, each followed by an application of cover aggregate</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="405" class="tabcontent">
+	<h3>Section 405 - Prime Coat (Deactivated)</h3>
+	<p>Preparing and treating a rubblized PCCP with asphalt material</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="406" class="tabcontent">
+	<h3>Section 406 - Tack Coat (Deactivated)</h3>
+	<p>Preparing and treating an existing pavement or concrete surface with asphalt material</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="407" class="tabcontent">
+	<h3>Section 407 - Dust Palliative</h3>
+	<p>Preparing and treating an existing aggregate surface with asphalt material</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="408" class="tabcontent">
+	<h3>Section 408 - Sealing or Filling Cracks and Joints (Deactivated)</h3>
+	<p>Sealing or filling longitudinal and transverse cracks and joints in existing asphalt pavement</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="409" class="tabcontent">
+	<h3>Section 409 - Equipment (Deactivated)</h3>
+	<p>Equipment for (1) Production, Transportation, and Laydown of Asphalt Mixtures, (2) Mixing Plant, and (3) HMA Laydown Operations</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="410" class="tabcontent">
+	<h3>Section 410 - QC/QA HMA - SMA Pavement</h3>
+	<p>One course of QC/QA HMA – SMA mixture constructed on prepared foundations</p>
+	<button onclick="window.open('02_1_1_410_SearchByConstrProc.html', '_blank')">Search by Construction Process</button><br>
+	<button onclick="window.open('02_2_1_410_SearchByPayItem.html', '_blank')">Search by Pay Item</button><br>
+</div>
+
+<div id="411" class="tabcontent">
+	<h3>Section 411 - Warranted Micro-Surfacing (Deactivated)</h3>
+	<p>Furnishing materials and the placement of warranted micro-surfacing</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="412" class="tabcontent">
+	<h3>Section 412 - Fog Seal (Deactivated)</h3>
+	<p>Applying asphalt emulsion to the pavement surface</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<div id="414" class="tabcontent">
+	<h3>Section 414 - Ultrathin Bonded Wearing Course, Warrented (Deactivated)</h3>
+	<p>Furnishing materials and the placement of warranted ultrathin bonded wearing course, UBWC</p>
+	<button onclick="window.location.href='02_1_401_SearchByConstrProc.html'" disabled>Search by Construction Process</button><br>
+	<button onclick="window.location.href='02_2_401_SearchByPayItem.html'" disabled>Search by Pay Item</button><br>
+</div>
+
+<script>
+document.getElementById("defaultOpen").click();
+
+function createSearchLinks(evt, chosenSection){
+
+	var i, tabcontent, buttons;
+
+    // Hide all tab content
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the active class from all buttons
+    buttons = document.querySelectorAll(".tab button");
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    // Show the selected tab content
+    document.getElementById(chosenSection).style.display = "block";
+
+    // Add the active class to the clicked button
+    evt.currentTarget.classList.add("active");
+}
+
+</script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 {
 	"id": "401-008",
+	"title":"Segregation, Flushing, and Bleeding",
 	"subSection": "401.10",
 	"checkQuestion": {
 		"contents": [
@@ -20,7 +21,7 @@
 	"rationale": {
 		"contents": [
 			{
-				"sentence": "Can lead to reduced pavement life, rutting, raveling, and moisture damage"
+				"sentence": "Segregation, flushing, or bleeding of HMA mixtures can lead to reduced pavement life, rutting, raveling, and moisture damage."
 			}
 		]
 	},
